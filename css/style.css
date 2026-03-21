@@ -1,83 +1,98 @@
 body {
-  margin: 0;
-  font-family: Arial;
-  background: linear-gradient(to bottom, #3a7bd5, #00d2ff);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #eef2f7;
 }
 
-/* HEADER */
+/* Center */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login */
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    background: #f1f1f1;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background: #4facfe;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Header */
 .header {
-  padding: 15px;
-  color: white;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    padding: 20px;
+    color: white;
+    border-radius: 0 0 25px 25px;
 }
 
-.top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  font-size: 40px;
-}
-
-.lang {
-  border: 1px solid white;
-  padding: 5px 10px;
-  border-radius: 10px;
-}
-
-/* STATS */
-.stats {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
 }
 
 .card {
-  background: white;
-  padding: 10px;
-  border-radius: 15px;
-  text-align: center;
-  width: 30%;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
-.card.active {
-  border: 2px solid #3a7bd5;
+.card:hover {
+    transform: scale(1.05);
 }
 
-/* NOTICE */
+/* Notice */
 .notice {
-  margin: 15px;
-  padding: 10px;
-  background: #0d47a1;
-  color: yellow;
-  border-radius: 10px;
-  text-align: center;
+    background: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
 }
 
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  padding: 15px;
+/* Navbar */
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
 }
 
-.box {
-  background: white;
-  padding: 20px;
-  text-align: center;
-  border-radius: 15px;
-  font-size: 14px;
-}
-
-/* BOTTOM NAV */
-.bottom {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: white;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
+.nav button {
+    border: none;
+    background: none;
+    font-size: 20px;
 }
